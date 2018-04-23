@@ -206,6 +206,12 @@ class RestaurantTableViewController: UITableViewController, NSFetchedResultsCont
             return true
         }
     }
+    
+    // MARK: - Navigation
+    
+    @IBAction func unwindToHome(segue: UIStoryboardSegue) {
+        dismiss(animated: true, completion: nil)
+    }
 
     // MARK: - NSFetchedResultsControllerDelegate methods
     
