@@ -24,6 +24,7 @@
 		ED3DD76A208E487100CEDC82 /* RestaurantDetailIconTextCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED3DD766208E487100CEDC82 /* RestaurantDetailIconTextCell.swift */; };
 		ED3DD76B208E487100CEDC82 /* RestaurantDetailTextCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED3DD767208E487100CEDC82 /* RestaurantDetailTextCell.swift */; };
 		ED3DD76D208E507400CEDC82 /* ReviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED3DD76C208E507300CEDC82 /* ReviewViewController.swift */; };
+		ED3DD76F208E5C5500CEDC82 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED3DD76E208E5C5500CEDC82 /* MapViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +47,7 @@
 		ED3DD766208E487100CEDC82 /* RestaurantDetailIconTextCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestaurantDetailIconTextCell.swift; sourceTree = "<group>"; };
 		ED3DD767208E487100CEDC82 /* RestaurantDetailTextCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestaurantDetailTextCell.swift; sourceTree = "<group>"; };
 		ED3DD76C208E507300CEDC82 /* ReviewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReviewViewController.swift; sourceTree = "<group>"; };
+		ED3DD76E208E5C5500CEDC82 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +96,7 @@
 		ED3DD753208E2DCC00CEDC82 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				ED3DD76E208E5C5500CEDC82 /* MapViewController.swift */,
 				ED3DD76C208E507300CEDC82 /* ReviewViewController.swift */,
 				ED3DD760208E46A900CEDC82 /* RestaurantDetailViewController.swift */,
 				ED3DD754208E2DCC00CEDC82 /* RestaurantTableViewController.swift */,
@@ -208,6 +211,7 @@
 				ED3DD73F208E214D00CEDC82 /* AppDelegate.swift in Sources */,
 				ED3DD768208E487100CEDC82 /* RestaurantDetailMapCell.swift in Sources */,
 				ED3DD769208E487100CEDC82 /* RestaurantDetailSeparatorCell.swift in Sources */,
+				ED3DD76F208E5C5500CEDC82 /* MapViewController.swift in Sources */,
 				ED3DD755208E2DCC00CEDC82 /* RestaurantTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
