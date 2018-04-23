@@ -3,7 +3,7 @@
 //  RestuarantRecommendations
 //
 //  Created by Saud Ahmed on 23/8/2017.
-//  Copyright © 2017 AppCoda. All rights reserved.
+//  Copyright © 2017 privateprojects. All rights reserved.
 //
 
 import UIKit

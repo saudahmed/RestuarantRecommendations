@@ -2,8 +2,8 @@
 //  AppDelegate.swift
 //  RestuarantRecommendations
 //
-//  Created by Saud Ahmed on 23.04.18.
-//  Copyright © 2018 privateprojects. All rights reserved.
+//  Created by Saud Ahmed on 23.04.17.
+//  Copyright © 2017 privateprojects. All rights reserved.
 //
 
 import UIKit

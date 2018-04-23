@@ -3,7 +3,7 @@
 //  RestuarantRecommendations
 //
 //  Created by Saud Ahmed on 23/8/2017.
-//  Copyright © 2017 AppCoda. All rights reserved.
+//  Copyright © 2017 privateprojects. All rights reserved.
 //
 
 import UIKit
@@ -159,12 +159,11 @@ class RestaurantTableViewController: UITableViewController, NSFetchedResultsCont
                 activityController = UIActivityViewController(activityItems: [defaultText], applicationActivities: nil)
             }
             
-            if let popoverController = activityController.popoverPresentationController {
-                if let cell = tableView.cellForRow(at: indexPath) {
+            if let popoverController = activityController.popoverPresentationController,
+                let cell = tableView.cellForRow(at: indexPath) {
                     popoverController.sourceView = cell
                     popoverController.sourceRect = cell.bounds
                 }
-            }
             
             self.present(activityController, animated: true, completion: nil)
             completionHandler(true)
@@ -208,6 +207,15 @@ class RestaurantTableViewController: UITableViewController, NSFetchedResultsCont
     }
     
     // MARK: - Navigation
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "showRestaurantDetail" {
+            if let indexPath = tableView.indexPathForSelectedRow {
+                let destinationController = segue.destination as! RestaurantDetailViewController
+                destinationController.restaurant = (searchController.isActive) ? searchResults[indexPath.row] : restaurants[indexPath.row]
+            }
+        }
+    }
     
     @IBAction func unwindToHome(segue: UIStoryboardSegue) {
         dismiss(animated: true, completion: nil)
