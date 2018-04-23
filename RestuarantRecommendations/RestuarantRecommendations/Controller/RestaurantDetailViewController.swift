@@ -119,7 +119,14 @@ class RestaurantDetailViewController: UIViewController, UITableViewDataSource, U
     }
     
     // MARK: - Navigation
-
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "showReview" {
+            let destinationController = segue.destination as! ReviewViewController
+            destinationController.restaurant = restaurant
+        }
+    }
+    
     @IBAction func close(segue: UIStoryboardSegue) {
         dismiss(animated: true, completion: nil)
     }

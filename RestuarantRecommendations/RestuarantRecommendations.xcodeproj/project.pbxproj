@@ -23,6 +23,7 @@
 		ED3DD769208E487100CEDC82 /* RestaurantDetailSeparatorCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED3DD765208E487000CEDC82 /* RestaurantDetailSeparatorCell.swift */; };
 		ED3DD76A208E487100CEDC82 /* RestaurantDetailIconTextCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED3DD766208E487100CEDC82 /* RestaurantDetailIconTextCell.swift */; };
 		ED3DD76B208E487100CEDC82 /* RestaurantDetailTextCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED3DD767208E487100CEDC82 /* RestaurantDetailTextCell.swift */; };
+		ED3DD76D208E507400CEDC82 /* ReviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED3DD76C208E507300CEDC82 /* ReviewViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +45,7 @@
 		ED3DD765208E487000CEDC82 /* RestaurantDetailSeparatorCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestaurantDetailSeparatorCell.swift; sourceTree = "<group>"; };
 		ED3DD766208E487100CEDC82 /* RestaurantDetailIconTextCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestaurantDetailIconTextCell.swift; sourceTree = "<group>"; };
 		ED3DD767208E487100CEDC82 /* RestaurantDetailTextCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestaurantDetailTextCell.swift; sourceTree = "<group>"; };
+		ED3DD76C208E507300CEDC82 /* ReviewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReviewViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +94,7 @@
 		ED3DD753208E2DCC00CEDC82 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				ED3DD76C208E507300CEDC82 /* ReviewViewController.swift */,
 				ED3DD760208E46A900CEDC82 /* RestaurantDetailViewController.swift */,
 				ED3DD754208E2DCC00CEDC82 /* RestaurantTableViewController.swift */,
 				ED3DD75E208E409E00CEDC82 /* NewRestuarantTableViewController.swift */,
@@ -194,6 +197,7 @@
 			files = (
 				ED3DD758208E2FC000CEDC82 /* RestaurantTableViewCell.swift in Sources */,
 				ED3DD75C208E305900CEDC82 /* UINavigationController+Ext.swift in Sources */,
+				ED3DD76D208E507400CEDC82 /* ReviewViewController.swift in Sources */,
 				ED3DD76B208E487100CEDC82 /* RestaurantDetailTextCell.swift in Sources */,
 				ED3DD761208E46A900CEDC82 /* RestaurantDetailViewController.swift in Sources */,
 				ED3DD763208E472900CEDC82 /* RestaurantDetailHeaderView.swift in Sources */,

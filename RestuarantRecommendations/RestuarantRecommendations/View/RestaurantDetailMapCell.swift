@@ -1,9 +1,9 @@
 //
 //  RestaurantDetailMapCell.swift
-//  FoodPin
+//  RestuarantRecommendations
 //
-//  Created by Simon Ng on 17/9/2017.
-//  Copyright © 2017 AppCoda. All rights reserved.
+//  Created by Saud Ahmed on 17/9/2017.
+//  Copyright © 2017 privateprojects. All rights reserved.
 //
 
 import UIKit
