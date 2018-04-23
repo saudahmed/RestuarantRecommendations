@@ -1,8 +1,8 @@
 //
 //  RestaurantTableViewCell.swift
-//  FoodPin
+//  RestuarantRecommendations
 //
-//  Created by Simon Ng on 24/8/2017.
+//  Created by Saud Ahmed on 23/8/2017.
 //  Copyright © 2017 AppCoda. All rights reserved.
 //
 
