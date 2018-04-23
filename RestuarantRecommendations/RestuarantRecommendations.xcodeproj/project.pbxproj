@@ -26,6 +26,7 @@
 		ED3DD786208E65D600CEDC82 /* RestaurantDetailSeparatorCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED3DD77E208E65D600CEDC82 /* RestaurantDetailSeparatorCell.swift */; };
 		ED3DD787208E65D600CEDC82 /* RestaurantDetailIconTextCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED3DD77F208E65D600CEDC82 /* RestaurantDetailIconTextCell.swift */; };
 		ED3DD788208E65D600CEDC82 /* RestaurantTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED3DD780208E65D600CEDC82 /* RestaurantTableViewCell.swift */; };
+		ED3DD78B208E6BC200CEDC82 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED3DD78A208E6BC200CEDC82 /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +51,8 @@
 		ED3DD77E208E65D600CEDC82 /* RestaurantDetailSeparatorCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestaurantDetailSeparatorCell.swift; sourceTree = "<group>"; };
 		ED3DD77F208E65D600CEDC82 /* RestaurantDetailIconTextCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestaurantDetailIconTextCell.swift; sourceTree = "<group>"; };
 		ED3DD780208E65D600CEDC82 /* RestaurantTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestaurantTableViewCell.swift; sourceTree = "<group>"; };
+		ED3DD78A208E6BC200CEDC82 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		ED3DD78C208E6BCF00CEDC82 /* RestuarantRecommendations.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = RestuarantRecommendations.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED3DD78B208E6BC200CEDC82 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,6 +72,7 @@
 			children = (
 				ED3DD73D208E214D00CEDC82 /* RestuarantRecommendations */,
 				ED3DD73C208E214D00CEDC82 /* Products */,
+				ED3DD789208E6BC200CEDC82 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -82,6 +87,7 @@
 		ED3DD73D208E214D00CEDC82 /* RestuarantRecommendations */ = {
 			isa = PBXGroup;
 			children = (
+				ED3DD78C208E6BCF00CEDC82 /* RestuarantRecommendations.entitlements */,
 				ED3DD759208E305800CEDC82 /* Extensions */,
 				ED3DD756208E2FC000CEDC82 /* View */,
 				ED3DD753208E2DCC00CEDC82 /* Controller */,
@@ -146,6 +152,14 @@
 			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		ED3DD789208E6BC200CEDC82 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ED3DD78A208E6BC200CEDC82 /* MapKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -178,6 +192,14 @@
 				TargetAttributes = {
 					ED3DD73A208E214D00CEDC82 = {
 						CreatedOnToolsVersion = 9.3;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -376,8 +398,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = RestuarantRecommendations/RestuarantRecommendations.entitlements;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JUZEVVS5F8;
 				INFOPLIST_FILE = "$(SRCROOT)/RestuarantRecommendations/Supporting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -393,8 +418,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = RestuarantRecommendations/RestuarantRecommendations.entitlements;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JUZEVVS5F8;
 				INFOPLIST_FILE = "$(SRCROOT)/RestuarantRecommendations/Supporting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
