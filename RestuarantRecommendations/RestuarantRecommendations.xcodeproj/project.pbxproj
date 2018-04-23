@@ -85,12 +85,8 @@
 				ED3DD759208E305800CEDC82 /* Extensions */,
 				ED3DD756208E2FC000CEDC82 /* View */,
 				ED3DD753208E2DCC00CEDC82 /* Controller */,
-				ED3DD73E208E214D00CEDC82 /* AppDelegate.swift */,
-				ED3DD742208E214D00CEDC82 /* Main.storyboard */,
-				ED3DD748208E215000CEDC82 /* Assets.xcassets */,
-				ED3DD74A208E215000CEDC82 /* LaunchScreen.storyboard */,
-				ED3DD74D208E215000CEDC82 /* Info.plist */,
-				ED3DD745208E214D00CEDC82 /* RestuarantRecommendations.xcdatamodeld */,
+				ED3DD774208E648700CEDC82 /* Model */,
+				ED3DD775208E64BC00CEDC82 /* Supporting Files */,
 			);
 			path = RestuarantRecommendations;
 			sourceTree = "<group>";
@@ -111,6 +107,8 @@
 		ED3DD756208E2FC000CEDC82 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				ED3DD74A208E215000CEDC82 /* LaunchScreen.storyboard */,
+				ED3DD742208E214D00CEDC82 /* Main.storyboard */,
 				ED3DD766208E487100CEDC82 /* RestaurantDetailIconTextCell.swift */,
 				ED3DD764208E487000CEDC82 /* RestaurantDetailMapCell.swift */,
 				ED3DD765208E487000CEDC82 /* RestaurantDetailSeparatorCell.swift */,
@@ -128,6 +126,24 @@
 				ED3DD75B208E305800CEDC82 /* UIColor+Ext.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		ED3DD774208E648700CEDC82 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				ED3DD745208E214D00CEDC82 /* RestuarantRecommendations.xcdatamodeld */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		ED3DD775208E64BC00CEDC82 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				ED3DD74D208E215000CEDC82 /* Info.plist */,
+				ED3DD748208E215000CEDC82 /* Assets.xcassets */,
+				ED3DD73E208E214D00CEDC82 /* AppDelegate.swift */,
+			);
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -361,7 +377,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = RestuarantRecommendations/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/RestuarantRecommendations/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -378,7 +394,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = RestuarantRecommendations/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/RestuarantRecommendations/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

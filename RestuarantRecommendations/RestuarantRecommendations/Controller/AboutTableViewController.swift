@@ -76,14 +76,4 @@ class AboutTableViewController: UITableViewController {
         
         tableView.deselectRow(at: indexPath, animated: false)
     }
-    
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "showWebView" {
-            if let destinationController = segue.destination as? WebViewController,
-                let indexPath = tableView.indexPathForSelectedRow {
-                
-                destinationController.targetURL = sectionContent[indexPath.section][indexPath.row].link
-            }
-        }
-    }
 }
