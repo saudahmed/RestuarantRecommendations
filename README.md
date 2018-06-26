@@ -2,7 +2,7 @@
 
 This is part of a big project that I am currently working on. This RestuarantRecommendations is scaled down to show relevant iOS code
 and what we are doing inside the application. This project was started on Gitlab and has recently been mirrored to Github to track changes. Recruiters and technical
-leads can go through the code written in Swift 4.
+leads can go through the code written in Swift 4..
 
 # Architecure Used
 MVC
